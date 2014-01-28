@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Description",
+    "uName": "Description",
+    "template": "text",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Problem",
+    "uName": "Problem",
+    "template": "lookup",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Customer",
+    "uName": "Customer",
+    "template": "lookup",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Assingn",
+    "uName": "Assingn",
+    "template": "lookup",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Status",
+    "uName": "Status",
+    "template": "lookup",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 6,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  }
+]

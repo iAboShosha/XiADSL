@@ -1,0 +1,19 @@
+﻿[
+	{"name":"name","uName":"الاسم","template":"string","row":1,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"address","uName":"العنوان","template":"string","row":2,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"phone1","uName":"الهاتف 1","template":"string","row":3,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"phone2","uName":"الهاتف 2","template":"string","row":4,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mobile1","uName":"محمول 1","template":"string","row":5,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mobile2","uName":"محمول 2","template":"string","row":6,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mail1","uName":"ميل 1","template":"string","row":7,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mail2","uName":"ميل 2","template":"string","row":8,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"facebook","uName":"فيسبوك","template":"string","row":9,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"twitter","uName":"تويتر","template":"string","row":10,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"custom1","uName":"اخري 1","template":"string","row":11,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"custom2","uName":"اخري 2","template":"string","row":12,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"custom3","uName":"اخري 3","template":"string","row":13,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"custom4","uName":"اخري 4","template":"string","row":14,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"note","uName":"ملاحظات","template":"string","row":15,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"parentId","uName":"المسؤل","template":"lookup", "lookup":"Customer","row":16,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"id","uName":"id","template":"key","row":17,"sort":1,"size":4,"group":"general","properties":{}}
+]

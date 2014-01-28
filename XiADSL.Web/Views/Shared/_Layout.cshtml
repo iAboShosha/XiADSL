@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>XiADSL</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+
+
+
+    <link href="~/Content/kendo/2013.3.1119/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/2013.3.1119/kendo.default.min.css" rel="stylesheet" />
+    
+    <link href="~/Content/kendo/2013.3.1119/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/2013.3.1119/kendo.rtl.min.css" rel="stylesheet" />
+    
+
+    
+    <meta name="viewport" content="width=device-width" />
+    @*@Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    
+    <script src="../../Scripts/angular.min.js"></script>
+    <script src="../../Scripts/kendo/2013.3.1119/kendo.web.min.js"></script>
+    <script src="../../Scripts/angular-resource.min.js"></script>
+    <script src="../../Scripts/angular-route.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/breeze.min.js"></script>
+    <script src="../../Scripts/breeze.angular.q.js"></script>
+    <script>
+        var s = '<script type="text/javascript" src="app/app.js?_' + Math.random() * 1000 + '"><\/script>';
+        document.write(s);
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

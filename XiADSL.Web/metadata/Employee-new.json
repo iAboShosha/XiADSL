@@ -1,0 +1,145 @@
+[
+  {
+    "name": "RecruitmentDate",
+    "uName": "RecruitmentDate",
+    "template": "date",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Address",
+    "uName": "Address",
+    "template": "string",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Phone1",
+    "uName": "Phone1",
+    "template": "string",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Phone2",
+    "uName": "Phone2",
+    "template": "string",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Mobile1",
+    "uName": "Mobile1",
+    "template": "string",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Mobile2",
+    "uName": "Mobile2",
+    "template": "string",
+    "row": 6,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Custom1",
+    "uName": "Custom1",
+    "template": "string",
+    "row": 7,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Custom2",
+    "uName": "Custom2",
+    "template": "string",
+    "row": 8,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Custom3",
+    "uName": "Custom3",
+    "template": "string",
+    "row": 9,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Custom4",
+    "uName": "Custom4",
+    "template": "string",
+    "row": 10,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Note",
+    "uName": "Note",
+    "template": "string",
+    "row": 11,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Name",
+    "uName": "Name",
+    "template": "string",
+    "row": 12,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "Id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 13,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  }
+]

@@ -1,0 +1,7 @@
+﻿<div class="form-group">
+    <label for="{{v.name}}" class="col-md-2 control-label">{{v.uName}} </label>
+    <div class="col-md-10">
+        <kui-combobox url="/API/{{v.lookup||v.name}}/lookup" model="model[v.name+'Id']" emodel="model[v.name]" />
+    </div>
+
+</div>

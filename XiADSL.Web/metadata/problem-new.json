@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Name",
+    "uName": "Name",
+    "template": "string",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Description",
+    "uName": "Description",
+    "template": "string",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  }
+]

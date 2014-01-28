@@ -1,0 +1,112 @@
+[
+  {
+    "name": "description",
+    "uName": "Description",
+    "template": "string",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "created",
+    "uName": "Created",
+    "template": "date",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "problem",
+    "uName": "Problem",
+    "template": "lookup",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "reSolved",
+    "uName": "ReSolved",
+    "template": "date",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "customer",
+    "uName": "Customer",
+    "template": "lookup",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "creator",
+    "uName": "Creator",
+    "template": "lookup",
+    "row": 6,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "assingn",
+    "uName": "Assingn",
+    "template": "lookup",
+    "row": 7,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "closeNode",
+    "uName": "CloseNode",
+    "template": "string",
+    "row": 8,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "status",
+    "uName": "Status",
+    "template": "lookup",
+    "row": 9,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "isClosed",
+    "uName": "IsClosed",
+    "template": "bool",
+    "row": 10,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {}
+  },
+  {
+    "name": "Ticketid",
+    "uName": "Actions",
+    "template": "list",
+    "row": 11,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "properties": {"action":"action"}
+  }
+]

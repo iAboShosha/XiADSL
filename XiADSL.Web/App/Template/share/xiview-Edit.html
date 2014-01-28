@@ -1,0 +1,24 @@
+﻿<div class="container form-horizontal">
+    <fieldset>
+        <legend>Update {{view}}</legend>
+    </fieldset>
+    
+    <button class="btn btn-primary" ng-click="update()">
+        تعديل
+    </button>
+
+    <button class="btn btn-primary" ng-click="delete()">
+        حذف
+    </button>
+
+    <div class="row" ng-repeat="r in meta">
+        <div class="col-md-{{v.size}}" ng-repeat="v in r" ng-include="'app/template/share/edit/'+v.template+'.html'"/>
+    </div>
+    <button class="btn btn-primary" ng-click="update()">
+        تعديل
+    </button>
+    
+    <button class="btn btn-primary" ng-click="delete()">
+        حذف
+    </button>
+</div>

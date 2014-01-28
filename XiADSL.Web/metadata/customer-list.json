@@ -1,0 +1,13 @@
+﻿[
+	{"name":"name","uName":"الاسم","template":"string","row":1,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"phone1","uName":"الهاتف 1","template":"string","row":3,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"phone2","uName":"الهاتف 2","template":"string","row":4,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mobile1","uName":"محمول 1","template":"string","row":5,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mobile2","uName":"محمول 2","template":"string","row":6,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mail1","uName":"ميل 1","template":"string","row":7,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"mail2","uName":"ميل 2","template":"string","row":8,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"facebook","uName":"فيسبوك","template":"string","row":9,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"twitter","uName":"تويتر","template":"string","row":10,"sort":1,"size":4,"group":"general","properties":{}},
+	{"name":"parent","uName":"المسؤل","template":"lookup","row":16,"sort":1,"size":4,"group":"general","properties":{}}
+	
+]

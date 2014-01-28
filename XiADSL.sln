@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiADSL.Web", "XiADSL.Web\XiADSL.Web.csproj", "{808F9143-D5F8-412A-BA4A-9A5A2D4A71EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiADSL.Arc", "XiADSL.Arc\XiADSL.Arc.csproj", "{6AAF9C46-B40F-45F3-AAA6-FE1396DC8DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiADSL.Models", "XiADSL.Models\XiADSL.Models.csproj", "{17EA2E4F-1DB0-4360-B9EF-DFD25EC6A0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiADSL.DataAccess", "XiADSL.DataAccess\XiADSL.DataAccess.csproj", "{7D9AAE42-6232-4733-8901-58185F107E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiADSL.Cmd", "XiADSL.Cmd\XiADSL.Cmd.csproj", "{6DED7E2D-EA8D-4D64-9D6F-4BD18547B42C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808F9143-D5F8-412A-BA4A-9A5A2D4A71EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808F9143-D5F8-412A-BA4A-9A5A2D4A71EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808F9143-D5F8-412A-BA4A-9A5A2D4A71EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808F9143-D5F8-412A-BA4A-9A5A2D4A71EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AAF9C46-B40F-45F3-AAA6-FE1396DC8DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AAF9C46-B40F-45F3-AAA6-FE1396DC8DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AAF9C46-B40F-45F3-AAA6-FE1396DC8DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AAF9C46-B40F-45F3-AAA6-FE1396DC8DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EA2E4F-1DB0-4360-B9EF-DFD25EC6A0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EA2E4F-1DB0-4360-B9EF-DFD25EC6A0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EA2E4F-1DB0-4360-B9EF-DFD25EC6A0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EA2E4F-1DB0-4360-B9EF-DFD25EC6A0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9AAE42-6232-4733-8901-58185F107E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9AAE42-6232-4733-8901-58185F107E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9AAE42-6232-4733-8901-58185F107E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9AAE42-6232-4733-8901-58185F107E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DED7E2D-EA8D-4D64-9D6F-4BD18547B42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DED7E2D-EA8D-4D64-9D6F-4BD18547B42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DED7E2D-EA8D-4D64-9D6F-4BD18547B42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DED7E2D-EA8D-4D64-9D6F-4BD18547B42C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

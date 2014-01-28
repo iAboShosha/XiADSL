@@ -1,0 +1,57 @@
+[
+  {
+    "name": "creator",
+    "uName": "Creator",
+    "template": "lookup",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "EmployeeShape",
+    "properties": {}
+  },
+  {
+    "name": "created",
+    "uName": "Created",
+    "template": "date",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "status",
+    "uName": "Status",
+    "template": "lookup",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "Status",
+    "properties": {}
+  },
+  {
+    "name": "note",
+    "uName": "Note",
+    "template": "string",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  }
+]
