@@ -253,6 +253,7 @@
     <Compile Include="Models\ViewMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="App\boot.js" />
+    <Content Include="App\Controller\Meta.js" />
     <Content Include="App\Controller\Core.js" />
     <Content Include="App\Controller\Menu.js" />
     <Content Include="App\Directive\KendoUi.js" />
@@ -266,6 +267,7 @@
     <Content Include="App\Template\share\show\lookup.html" />
     <Content Include="App\Template\share\show\string.html" />
     <Content Include="App\Template\share\show\text.html" />
+    <Content Include="App\Template\ximetadata.html" />
     <Content Include="App\Template\xivewCore.html" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <None Include="Scripts\breeze.intellisense.js" />

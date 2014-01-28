@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Web;
 using XiADSL.Arc;
 
 namespace XiADSL.Web.Models
 {
+
+    public class SaveMetadataModel
+    {
+        public string Mode { get; set; }
+        public string Meta { get; set; }
+    }
     public class ViewMetadata
     {
         private readonly PropertyInfo _property;

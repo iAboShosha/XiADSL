@@ -1,0 +1,78 @@
+﻿<div class="container form-horizontal">
+
+
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                
+                <th>Visable</th>
+                <th>Label</th>
+                <th>Row</th>
+                <th>Sort</th>
+                <th>size</th>
+                <th>Group</th>
+                <th>Template</th>
+                <th>lookup</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="r in rawMeta">
+            <td class="col-md-1"><input type="checkbox" class="form-control" ng-model="r.visable"></td>
+            <td class="col-md-2"><input type="text" class="form-control" ng-model="r.uName"></td>
+            <td class="col-md-1"><input type="text" class="form-control" ng-model="r.row"></td>
+            <td class="col-md-1"><input type="text" class="form-control col-md-1" ng-model="r.sort"></td>
+            <td class="col-md-1"><input type="text" class="form-control col-md-1" ng-model="r.size"></td>
+            <td class="col-md-2"><input type="text" class="form-control" ng-model="r.group"></td>
+            <td class="col-md-2">
+                <select class="form-control" ng-model="r.Template">
+                    <option value="">string</option>
+                    <option value="">bool</option>
+                    <option value="">date</option>
+                    <option value="">lookup</option>
+                </select>
+            </td>
+            <td class="col-md-2"><input type="text" class="form-control" ng-model="r.lookup"></td>
+
+
+        </tr>
+    </table>
+
+    <!--<div class="form-inline row" role="form" ng-repeat="r in rawMeta">
+        <div class="form-group col-md-2">
+
+        </div>
+
+        <div class="form-group col-md-1">
+
+
+        </div>
+
+        <div class="form-group col-md-1">
+
+
+        </div>
+
+        <div class="form-group col-md-1">
+
+
+        </div>
+
+        <div class="form-group  col-md-2">
+
+
+        </div>
+
+        <div class="form-group  col-md-2">
+
+
+        </div>
+        <div class="form-group  col-md-2">
+
+            
+        </div>
+
+    </div>-->
+
+    <button ng-click="saveMeta()" class="btn btn-default">Save meta</button>
+</div>
+
+

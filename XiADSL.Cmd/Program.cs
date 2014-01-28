@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using XiADSL.DataAccess;
-using XiADSL.Models;
-using XiADSL.Models.AccountDomain;
-using XiADSL.Models.GeneralDomain;
-
-namespace XiADSL.Cmd
+﻿namespace XiADSL.Cmd
 {
     class Program
     {

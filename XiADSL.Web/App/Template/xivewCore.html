@@ -1,3 +1,5 @@
-﻿<xiview ng-if="conf.viewMode=='new'" view="{{conf.modelName}}" model="form" mode="new" />
-<xiview ng-if="conf.viewMode=='edit'" view="{{conf.modelName}}" model="form" mode="edit" />
-<xiview ng-if="conf.viewMode=='list'" view="{{conf.modelName}}" model="form" mode="list" />
+﻿
+<xiview model="form" view="{{conf.modelName}}" ng-if="conf.viewMode=='new'" mode="new" />
+<xiview model="form" view="{{conf.modelName}}" ng-if="conf.viewMode=='edit'" mode="edit" />
+<xiview model="form" view="{{conf.modelName}}" ng-if="conf.viewMode=='list'" mode="list" />
+

@@ -1,24 +1,18 @@
-﻿XiApp.controller('CoreCtrl', function ($scope, $resource, $routeParams) {
+﻿XiApp.controller('CoreCtrl', function ($scope, $resource, $routeParams, $http) {
 
     $scope.conf = {
         viewMode: $routeParams.viewMode,
         modelName: $routeParams.modelName,
         id: $routeParams.id
     };
-    
-    var manager = new breeze.EntityManager("Api/customer");
-    var query1a = breeze.EntityQuery.from('select').where('Name', 'startsWith', 'A');
-        manager.executeQuery(query1a).then(function(a) {
-            console.log('breeze', a);
-        });
-    
+
 
     var pa = null;
     if ($routeParams.q) {
-        pa=JSON.parse($routeParams.q);
+        pa = JSON.parse($routeParams.q);
     }
-    
-    var url = 'API/' + $scope.conf.modelNamex;
+
+    var url = 'API/' + $scope.conf.modelName;
 
     var urlSvr = $resource(url, pa, {
         update: { method: 'put' }
@@ -43,9 +37,29 @@
         for (var i in $scope.form) {
             newObject[i] = $scope.form[i];
         }
+
         newObject.$save();
     });
 
+
+
+    //$scope.$on('xi.saveMeta', function (event, data) {
+    //    var url = 'API/' + $scope.conf.modelName + '/saveMeta';
+
+
+    //    $http({
+    //        url: url,
+    //        method: "POST",
+    //        data: { model: $scope.conf.viewMode, meta: JSON.stringify(data) },
+    //        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    //    }).success(function (pdata, status, headers, config) {
+
+    //    }).error(function (pdata, status, headers, config) {
+
+    //    });
+
+
+    //});
 
     $scope.$on('xi.update', function () {
         urlSvr.update($scope.form);

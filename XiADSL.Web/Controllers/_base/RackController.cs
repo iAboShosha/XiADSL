@@ -6,28 +6,17 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using Breeze.ContextProvider.EF6;
-using Breeze.WebApi2;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using XiADSL.Arc;
-using XiADSL.DataAccess;
 using XiADSL.Web.Models;
 
 namespace XiADSL.Web.Controllers._base
 {
 
-    [BreezeController]
+
     public class RackController<T> : ApiController where T : BaseModel, new()
     {
-        readonly EFContextProvider<AccountContext> _contextProvider = new EFContextProvider<AccountContext>();
-
-        [HttpGet]
-        [Route("{controller}/Metadata")]
-        public string Metadata()
-        {
-            return _contextProvider.Metadata();
-        }
 
         readonly IRepository<T> _repository;
         public RackController(IRepository<T> repository)
@@ -41,7 +30,6 @@ namespace XiADSL.Web.Controllers._base
         }
 
         [HttpGet]
-        [BreezeQueryable]
         public IEnumerable<T> Select()
         {
             return _repository.Query;
@@ -87,6 +75,14 @@ namespace XiADSL.Web.Controllers._base
             return content;
 
         }
+
+        [HttpPost]
+        public void SaveMeta(SaveMetadataModel model)
+        {
+             var file = HttpContext.Current.Server.MapPath("~/metadata/" + model.Mode + ".json");
+            File.WriteAllText(file,model.Meta);
+        }
+
 
         [HttpGet]
         public IEnumerable<KeyValueLookup> Lookup(string text)

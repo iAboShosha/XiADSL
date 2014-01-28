@@ -1,0 +1,134 @@
+[
+  {
+    "name": "description",
+    "uName": "Description",
+    "template": "string",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "created",
+    "uName": "Created",
+    "template": "date",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "problem",
+    "uName": "Problem",
+    "template": "lookup",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "Problem",
+    "properties": {}
+  },
+  {
+    "name": "resolved",
+    "uName": "ReSolved",
+    "template": "date",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "customer",
+    "uName": "Customer",
+    "template": "lookup",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "CustomerShape",
+    "properties": {}
+  },
+  {
+    "name": "creator",
+    "uName": "Creator",
+    "template": "lookup",
+    "row": 6,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "EmployeeShape",
+    "properties": {}
+  },
+  {
+    "name": "assingn",
+    "uName": "Assingn",
+    "template": "lookup",
+    "row": 7,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "EmployeeShape",
+    "properties": {}
+  },
+  {
+    "name": "closenode",
+    "uName": "CloseNode",
+    "template": "string",
+    "row": 8,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "status",
+    "uName": "Status",
+    "template": "lookup",
+    "row": 9,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "Status",
+    "properties": {}
+  },
+  {
+    "name": "isclosed",
+    "uName": "IsClosed",
+    "template": "bool",
+    "row": 10,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "actions",
+    "uName": "Actions",
+    "template": "empty",
+    "row": 11,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 12,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  }
+]

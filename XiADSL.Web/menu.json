@@ -1,20 +1,25 @@
 ﻿[{
-"name":"Master data","menu":[
-		{"name":"New Customer","href":"#/view/list/customer"},
-		{"name":"Employee","href":"#/view/list/Employee"},
-		{"name":"Product","href":"#/view/list/Product"}
+		"name":"Master data","menu":[
+			{"name":"Customer","href":"#/view/list/customer"},
+			{"name":"Employee","href":"#/view/list/Employee"},
+			{"name":"Product","href":"#/view/list/Product"}
 		] },
 
 		{"name":"Customer Support","menu":[
-		{"name":"Create Ticket","href":"#/view/new/Ticket"},
-		{"name":"Tickets","href":"#/view/list/Ticket"},
-		{"name":"Problem","href":"#/view/list/problem"},
-		{"name":"status","href":"#/view/list/status"}
+			{"name":"Create Ticket","href":"#/view/new/Ticket"},
+			{"name":"Tickets","href":"#/view/list/Ticket"},
+			{"name":"Problem","href":"#/view/list/problem"},
+			{"name":"status","href":"#/view/list/status"}
 
 		] },
 
 		{"name":"Sales","menu":[
-		{"name":"Invoice","href":"#/view/Invoice"},
-		{"name":"Paymet","href":"#/view/payment"}
+			{"name":"Invoice","href":"#/view/Invoice"},
+			{"name":"Paymet","href":"#/view/payment"}
+		] },
+
+		{"name":"Admin","menu":[
+			{"name":"Users","href":"#"},
+			{"name":"Settings","href":"#"}
 		] }
 ]
