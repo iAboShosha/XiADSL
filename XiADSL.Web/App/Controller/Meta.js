@@ -23,7 +23,7 @@
     });
 
     $scope.saveMeta = function () {
-        var surl = 'API/' + $scope.conf.modelName + '/saveMeta';
+        var surl = 'View/saveMeta';
 
 
         if ($scope.rawMeta)

@@ -76,12 +76,7 @@ namespace XiADSL.Web.Controllers._base
 
         }
 
-        [HttpPost]
-        public void SaveMeta(SaveMetadataModel model)
-        {
-             var file = HttpContext.Current.Server.MapPath("~/metadata/" + model.Mode + ".json");
-            File.WriteAllText(file,model.Meta);
-        }
+        
 
 
         [HttpGet]

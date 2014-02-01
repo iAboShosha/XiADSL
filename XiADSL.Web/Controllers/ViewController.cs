@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Web.Mvc;
+using XiADSL.Web.Models;
 
 namespace XiADSL.Web.Controllers
 {
@@ -11,6 +12,12 @@ namespace XiADSL.Web.Controllers
             if (System.IO.File.Exists(file))
                 return File(file, "application/json");
             return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+        }
+        [HttpPost]
+        public void SaveMeta(SaveMetadataModel model)
+        {
+            var file = System.Web.HttpContext.Current.Server.MapPath("~/metadata/" + model.Mode + ".json");
+            System.IO.File.WriteAllText(file, model.Meta);
         }
     }
 }
