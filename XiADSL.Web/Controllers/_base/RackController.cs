@@ -6,6 +6,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using LinqToQuerystring;
+using LinqToQuerystring.WebApi;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using XiADSL.Arc;
@@ -29,10 +31,16 @@ namespace XiADSL.Web.Controllers._base
             return _repository.GetById(id);
         }
 
+
+
         [HttpGet]
-        public IEnumerable<T> Select()
+        public IQueryable<T> Select(string q = "")
         {
-            return _repository.Query;
+            if (string.IsNullOrEmpty(q))
+            {
+                return _repository.Query;
+            }
+            return _repository.Query.LinqToQuerystring("$filter=" + q);
         }
 
         public virtual HttpResponseMessage Post(T item)
@@ -76,7 +84,7 @@ namespace XiADSL.Web.Controllers._base
 
         }
 
-        
+
 
 
         [HttpGet]

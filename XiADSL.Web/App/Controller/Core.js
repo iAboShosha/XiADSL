@@ -1,4 +1,4 @@
-﻿XiApp.controller('CoreCtrl', function ($scope, $resource, $routeParams, $http) {
+﻿XiApp.controller('CoreCtrl', function ($scope, $resource, $routeParams, $http, filterBuilder) {
 
     
     $scope.conf = {
@@ -27,9 +27,13 @@
         $scope.form = urlSvr.query();
 
 
-    $scope.$on('xi.query', function (event, data) {
-        var q = JSON.stringify(data);
-        urlSvr.query({q:q}, function (a) {
+    $scope.$on('xi.query', function(event, data) {
+
+        var $filter = {
+            q: filterBuilder.build(data)
+        };
+        //var q = JSON.stringify(data);
+        urlSvr.query($filter, function (a) {
             console.log(a);
             $scope.form = a;
 

@@ -11,14 +11,14 @@ namespace XiADSL.Web
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}",
-                defaults: new { }
+                routeTemplate: "api/{controller}"
             );
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApiWithId",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { }
+                defaults: null,
+                constraints: new  {id=@"^\d+$" }
             );
 
 

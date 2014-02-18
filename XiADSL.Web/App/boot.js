@@ -1,10 +1,8 @@
-﻿var XiApp = angular.module('xiApp', ['ngRoute', 'ngResource', 'kendoui', 'breeze.angular.q']);
+﻿var XiApp = angular.module('xiApp', ['ngRoute', 'ngResource', 'kendoui']);
 
 
 
-XiApp.run(['$q', 'use$q', function ($q, use$q) {
-    use$q($q);
-}]);
+
 
 XiApp.config(function($routeProvider) {
 
