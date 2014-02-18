@@ -1,14 +1,16 @@
 ﻿<div class="container form-horizontal">
+    <button title="الاعدادات" ng-click="editMetadata()"><span class="glyphicon glyphicon-wrench"></span> </button>
+
     <fieldset>
-        <legend>New {{view}}</legend>    
+        <legend>New {{view}}</legend>     
     </fieldset>
     
     <button class="btn btn-primary" ng-click="save()">
         حفظ
     </button>
 
-    <div class="row" ng-repeat="r in meta">
-        <div class="col-md-{{v.size}}" ng-repeat="v in r" ng-include="'app/template/share/edit/'+v.template+'.html'"/>
+    <div class="row" ng-repeat="r in meta" >
+        <div class="col-md-{{v.size}}" ng-repeat="v in r" ng-if="v.visible" ng-include="'app/template/share/edit/'+v.template+'.html'" />
     </div>
     <button class="btn btn-primary" ng-click="save()">
         حفظ

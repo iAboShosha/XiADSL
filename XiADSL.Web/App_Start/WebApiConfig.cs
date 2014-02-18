@@ -8,11 +8,19 @@ namespace XiADSL.Web
         {
             //config.MapHttpAttributeRoutes();
 
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}",
                 defaults: new { }
             );
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApiWithId",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { }
+            );
+
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApiWithActions",

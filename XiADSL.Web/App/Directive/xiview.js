@@ -12,7 +12,7 @@
         controller: function ($scope, $resource, $location, $routeParams) {
 
 
-            var url = "/view?v=" + $scope.view + '-' + $scope.mode;
+            var url = "/api/Metadata?v=" + $scope.view + '-' + $scope.mode;
 
             $resource(url).query(function (d) {
 
@@ -33,6 +33,7 @@
 
                 $scope.meta = grouped;
                 $scope.rawMeta = dd;
+                $scope.search = {};
 
                 $scope.saveMeta = function () {
                     $scope.$emit('xi.saveMeta', $scope.rawMeta);
@@ -48,6 +49,10 @@
                     $location.path('/view/list/' + $scope.view);
                 };
 
+                $scope.goSearch = function () {
+                    $scope.$emit('xi.query', $scope.search);
+                };
+                
                 $scope.viewUpdate = function (v) {
                     $location.path('/view/edit/' + $scope.view + '/' + v.id);
                 };

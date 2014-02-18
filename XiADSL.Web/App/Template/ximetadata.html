@@ -5,7 +5,8 @@
         <thead>
             <tr>
                 
-                <th>Visable</th>
+                <th>visible</th>
+                <th>Search</th>
                 <th>Label</th>
                 <th>Row</th>
                 <th>Sort</th>
@@ -16,7 +17,8 @@
             </tr>
         </thead>
         <tr ng-repeat="r in rawMeta">
-            <td class="col-md-1"><input type="checkbox" class="form-control" ng-model="r.visable"></td>
+            <td class="col-md-1"><input type="checkbox" class="form-control" ng-model="r.visible"></td>
+            <td class="col-md-1"><input type="checkbox" class="form-control" ng-model="r.search"></td>
             <td class="col-md-2"><input type="text" class="form-control" ng-model="r.uName"></td>
             <td class="col-md-1"><input type="text" class="form-control" ng-model="r.row"></td>
             <td class="col-md-1"><input type="text" class="form-control col-md-1" ng-model="r.sort"></td>
@@ -24,13 +26,18 @@
             <td class="col-md-2"><input type="text" class="form-control" ng-model="r.group"></td>
             <td class="col-md-2">
                 <select class="form-control" ng-model="r.Template">
-                    <option value="">string</option>
-                    <option value="">bool</option>
-                    <option value="">date</option>
-                    <option value="">lookup</option>
+                    <option value="string">string</option>
+                    <option value="number">number</option>
+                    <option value="money">money</option>
+                    <option value="date">date</option>
+                    <option value="lookup">lookup</option>
+                    <option value="bool">bool</option>
+                    <option value="password">password</option>
+                    <option value="Key">Key</option>
+                    <option value="empty">empty</option>
                 </select>
             </td>
-            <td class="col-md-2"><input type="text" class="form-control" ng-model="r.lookup"></td>
+            <td class="col-md-1"><input type="text" class="form-control" ng-model="r.lookup"></td>
 
 
         </tr>

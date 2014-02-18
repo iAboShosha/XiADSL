@@ -1,5 +1,6 @@
 ﻿XiApp.controller('CoreCtrl', function ($scope, $resource, $routeParams, $http) {
 
+    
     $scope.conf = {
         viewMode: $routeParams.viewMode,
         modelName: $routeParams.modelName,
@@ -27,7 +28,12 @@
 
 
     $scope.$on('xi.query', function (event, data) {
-        data = urlSvr.query();
+        var q = JSON.stringify(data);
+        urlSvr.query({q:q}, function (a) {
+            console.log(a);
+            $scope.form = a;
+
+        });
 
     });
 
@@ -42,24 +48,7 @@
     });
 
 
-
-    //$scope.$on('xi.saveMeta', function (event, data) {
-    //    var url = 'API/' + $scope.conf.modelName + '/saveMeta';
-
-
-    //    $http({
-    //        url: url,
-    //        method: "POST",
-    //        data: { model: $scope.conf.viewMode, meta: JSON.stringify(data) },
-    //        //headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
-    //    }).success(function (pdata, status, headers, config) {
-
-    //    }).error(function (pdata, status, headers, config) {
-
-    //    });
-
-
-    //});
+   
 
     $scope.$on('xi.update', function () {
         urlSvr.update($scope.form);

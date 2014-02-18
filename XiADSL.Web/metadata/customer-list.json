@@ -1,13 +1,200 @@
-﻿[
-	{"name":"name","uName":"الاسم","template":"string","row":1,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"phone1","uName":"الهاتف 1","template":"string","row":3,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"phone2","uName":"الهاتف 2","template":"string","row":4,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"mobile1","uName":"محمول 1","template":"string","row":5,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"mobile2","uName":"محمول 2","template":"string","row":6,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"mail1","uName":"ميل 1","template":"string","row":7,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"mail2","uName":"ميل 2","template":"string","row":8,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"facebook","uName":"فيسبوك","template":"string","row":9,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"twitter","uName":"تويتر","template":"string","row":10,"sort":1,"size":4,"group":"general","properties":{}},
-	{"name":"parent","uName":"المسؤل","template":"lookup","row":16,"sort":1,"size":4,"group":"general","properties":{}}
-	
+[
+  {
+    "name": "personalcardnumber",
+    "uName": "PersonalCardNumber",
+    "template": "string",
+    "row": 1,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "address",
+    "uName": "Address",
+    "template": "string",
+    "row": 2,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "phone1",
+    "uName": "Phone1",
+    "template": "string",
+    "row": 3,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "phone2",
+    "uName": "Phone2",
+    "template": "string",
+    "row": 4,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "mobile1",
+    "uName": "Mobile1",
+    "template": "string",
+    "row": 5,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "mobile2",
+    "uName": "Mobile2",
+    "template": "string",
+    "row": 6,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "mail1",
+    "uName": "Mail1",
+    "template": "string",
+    "row": 7,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "mail2",
+    "uName": "Mail2",
+    "template": "string",
+    "row": 8,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "facebook",
+    "uName": "Facebook",
+    "template": "string",
+    "row": 9,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "twitter",
+    "uName": "Twitter",
+    "template": "string",
+    "row": 10,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "custom1",
+    "uName": "Custom1",
+    "template": "string",
+    "row": 11,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "custom2",
+    "uName": "Custom2",
+    "template": "string",
+    "row": 12,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "custom3",
+    "uName": "Custom3",
+    "template": "string",
+    "row": 13,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "custom4",
+    "uName": "Custom4",
+    "template": "string",
+    "row": 14,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "note",
+    "uName": "Note",
+    "template": "string",
+    "row": 15,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "parent",
+    "uName": "Parent",
+    "template": "lookup",
+    "row": 16,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": "Customer",
+    "properties": {}
+  },
+  {
+    "name": "name",
+    "uName": "Name",
+    "template": "string",
+    "row": 17,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  },
+  {
+    "name": "id",
+    "uName": "Id",
+    "template": "Key",
+    "row": 18,
+    "sort": 1,
+    "size": 4,
+    "group": "General",
+    "lookup": null,
+    "properties": {}
+  }
 ]

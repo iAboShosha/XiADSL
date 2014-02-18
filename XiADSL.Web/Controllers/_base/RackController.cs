@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using XiADSL.Arc;
 using XiADSL.Web.Models;
+using System.Linq.Dynamic;
 
 namespace XiADSL.Web.Controllers._base
 {
@@ -32,7 +33,7 @@ namespace XiADSL.Web.Controllers._base
         [HttpGet]
         public IEnumerable<T> Select()
         {
-            return _repository.Query;
+            return _repository.Query.Where("description==\"1\"");
         }
 
         public virtual HttpResponseMessage Post(T item)
@@ -76,12 +77,7 @@ namespace XiADSL.Web.Controllers._base
 
         }
 
-        [HttpPost]
-        public void SaveMeta(SaveMetadataModel model)
-        {
-             var file = HttpContext.Current.Server.MapPath("~/metadata/" + model.Mode + ".json");
-            File.WriteAllText(file,model.Meta);
-        }
+       
 
 
         [HttpGet]

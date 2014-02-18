@@ -6,7 +6,7 @@
         mode: $routeParams.modelName + '-' + $routeParams.viewMode
     };
 
-    var url = "/view?v=" + $scope.conf.mode;
+    var url = "API/Metadata?v=" + $scope.conf.mode;
 
     $scope.rawMeta = $resource(url).query(function (d) {
 
@@ -23,7 +23,7 @@
     });
 
     $scope.saveMeta = function () {
-        var surl = 'API/' + $scope.conf.modelName + '/saveMeta';
+        var surl = 'API/Metadata/';
 
 
         if ($scope.rawMeta)

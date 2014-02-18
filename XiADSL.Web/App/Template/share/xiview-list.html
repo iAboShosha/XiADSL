@@ -1,10 +1,29 @@
 ﻿<div>
     <button title="اضافة" ng-click="viewCreate()"><span class="glyphicon glyphicon-plus-sign"></span> </button>
     <button title="الاعدادات" ng-click="editMetadata()"><span class="glyphicon glyphicon-wrench"></span> </button>
+    
+    <fieldset>
+        <legend>Search</legend>
+    </fieldset>
+    <div class="container">
+        <div class="row">
+            <div ng-repeat="v in rawMeta" ng-if="v.search" class="col-md-4">
+                <div ng-include="'app/template/share/search/'+v.template+'.html'"></div>
+            </div>
+            <div class="col-md-1">
+                <button title="بحث" ng-click="goSearch()"><span class="glyphicon glyphicon-search"></span> </button>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+
     <table class="table table-hover table-responsive table-striped">
         <tr>
             <th>*</th>
-            <th ng-repeat="r in rawMeta">{{r.uName}}</th>
+            <th ng-repeat="r in rawMeta" ng-if="r.visible">{{r.uName}}</th>
         </tr>
         <tr ng-repeat="r in model">
             <td class="col-md-1">
@@ -12,7 +31,7 @@
                 <button title="حذف" ng-click="delete(r)"><span class="glyphicon glyphicon-remove"></span> </button>
             </td>
 
-            <td ng-repeat="v in rawMeta" ng-include="'app/template/share/show/'+v.template+'.html'"></td>
+            <td ng-repeat="v in rawMeta" ng-if="v.visible" ng-include="'app/template/share/show/'+v.template+'.html'"></td>
             
 <!--            <td ng-if="v.template!='lookup'" ng-repeat="v in rawMeta">{{ r[v.name]}}</td>-->
 <!--            <td ng-if="v.template=='lookup'" ng-repeat="v in rawMeta">{{ r[v.name].name}}</td>-->
